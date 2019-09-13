@@ -23,3 +23,28 @@ WHERE ENDERECO LIKE '%RJ';
 
 SELECT NOME, ENDERECO  FROM CLIENTE
 WHERE ENDERECO LIKE '%CENTRO%';
+
+/*
+============================
+  FILTRANDO TABELA VERDADE
+----------------------------
+   A   B   A ou B  A e B
+   V   V     V       V
+   V   F     V       F
+   F   V     V       F
+   F   F     F       F
+*===========================/
+
+/*OR - OU */
+SELECT NOME, SEXO, ENDERECO FROM CLIENTE
+WHERE
+SEXO = 'M' OR ENDERECO LIKE '%RJ';
+
+/*AND - E */
+SELECT NOME, SEXO, ENDERECO FROM CLIENTE
+WHERE
+SEXO = 'M' AND ENDERECO LIKE '%MG';
+
+SELECT NOME, SEXO, ENDERECO FROM CLIENTE
+WHERE
+SEXO = 'f' AND ENDERECO LIKE '%ESTACIO%';
