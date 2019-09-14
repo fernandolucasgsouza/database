@@ -9,7 +9,7 @@
 -----------------------------------------------------------
 ## Modelagem
 
-##### 1º FORMA NORMAL
+#### 1º FORMA NORMAL
 
   1 - TODO CAMPO VETORIZADO SE TORANRA OUTRA TABELA
     [AZUL, AMARELO, VERDE, VERMELHO]
@@ -23,14 +23,13 @@
   DE CHAVE PRIMARIA OU PRIMARY KEY
 
 
-##### CARDINALIDADE
-(1,1)
-(0,1)
-(1,n)
-(0,n)
+####  CARDINALIDADE
+- (1,1)
+- (0,1)
+- (1,n)
+- (0,n)
 
-
-###### PRIMEIRO ALGARISMO - OBRIGATORIEDADE
+#### PRIMEIRO ALGARISMO - OBRIGATORIEDADE
 0 - NAO OBRIGATORIO
 1 - OBRIGATORIO
 
