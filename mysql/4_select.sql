@@ -20,24 +20,28 @@ WHERE EMAIL IS NULL;
 SELECT NOME, SEXO, ENDERECO FROM CLIENTE
 WHERE EMAIL IS NOT NULL;
 
+
+
 -- ==================================================
 --  FILTRANDO  COM WHERE E LIKE - INICIO
 -- ==================================================
 
-/* WHERE */
-SELECT NOME, ENDERECO  FROM CLIENTE
-WHERE SEXO = 'N';
+  /* WHERE */
+  SELECT NOME, ENDERECO  FROM CLIENTE
+  WHERE SEXO = 'N';
 
-/* LIKE = OBS: INIMIGO DA PERFORMACE*/
-SELECT NOME, ENDERECO  FROM CLIENTE
-WHERE ENDERECO LIKE '%RJ';
+  /* LIKE = OBS: INIMIGO DA PERFORMACE*/
+  SELECT NOME, ENDERECO  FROM CLIENTE
+  WHERE ENDERECO LIKE '%RJ';
 
-SELECT NOME, ENDERECO  FROM CLIENTE
-WHERE ENDERECO LIKE '%CENTRO%';
+  SELECT NOME, ENDERECO  FROM CLIENTE
+  WHERE ENDERECO LIKE '%CENTRO%';
 
 -- ==================================================
 --  FILTRANDO  COM WHERE E LIKE - FIM
 -- ==================================================
+
+
 
 -- ==================================================
 --  FILTRANDO TABELA VERDADE INICIO
@@ -89,6 +93,8 @@ WHERE ENDERECO LIKE '%CENTRO%';
 --  FILTRANDO TABELA VERDADE FIM
 -- ==================================================
 
+
+
 -- ==================================================
 --  COUNT - INICIO
 -- ==================================================
@@ -101,6 +107,7 @@ WHERE ENDERECO LIKE '%CENTRO%';
 -- ==================================================
 --  COUNT - FIM
 -- ==================================================
+
 
 -- ==================================================
 --  GROUP BY - INICIO
@@ -116,6 +123,7 @@ WHERE ENDERECO LIKE '%CENTRO%';
   FROM CLIENTE
   WHERE EMAIL IS NULL
   GROUP BY (SEXO);
+
 -- ==================================================
 --  GROUP BY - FIM
 -- ==================================================
