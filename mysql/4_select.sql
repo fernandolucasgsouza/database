@@ -1,16 +1,24 @@
 
 
-/* RETORNA DATA E HORA DO BANCO */
+/* RETORNAR DATA E HORA DO BANCO */
 SELECT NOW();
 
 /*ALIAS DE COLUNAS, DAR NOME PARA UMA COLUNA*/
 SELECT 'FERNANDO'
 
-/* RETORNA ALGUMAS COLUNAS */
+/* RETORNAR ALGUMAS COLUNAS */
 SELECT NOME, SEXO, EMAIL FROM CLIENTE;
 
-/* RETORNA TODAS COLUNAS */
+/* RETORNAR TODAS COLUNAS */
 SELECT * FROM CLIENTE;
+
+/* RETORNAR EMAILS NULOS */
+SELECT NOME, SEXO, ENDERECO FROM CLIENTE
+WHERE EMAIL IS NULL;
+
+/* RETORNAR EMAILS NÃO NULOS */
+SELECT NOME, SEXO, ENDERECO FROM CLIENTE
+WHERE EMAIL IS NOT NULL;
 
 -- ==================================================
 --  FILTRANDO  COM WHERE E LIKE - INICIO
@@ -43,39 +51,39 @@ WHERE ENDERECO LIKE '%CENTRO%';
    F   F     F       F
 *===========================/
 
-/*OR - OU */
-SELECT NOME, SEXO, ENDERECO FROM CLIENTE
-WHERE
-SEXO = 'M' OR ENDERECO LIKE '%RJ';
+  /*OR - OU */
+  SELECT NOME, SEXO, ENDERECO FROM CLIENTE
+  WHERE
+  SEXO = 'M' OR ENDERECO LIKE '%RJ';
 
-/*
-SEXO FEMININO OU MORA NO RIO JANEIRO
-  - 70% sexo femino
-  - 30% mora RJ
-  - 1º checo o sexo e depois a cidade
-*/
-SELECT NOME, SEXO, ENDERECO
-FROM CLIENTE WHERE SEXO = "F"
-OR ENDERECO LIKE "%RJ";
+  /*
+  SEXO FEMININO OU MORA NO RIO JANEIRO
+    - 70% sexo femino
+    - 30% mora RJ
+    - 1º checo o sexo e depois a cidade
+  */
+  SELECT NOME, SEXO, ENDERECO
+  FROM CLIENTE WHERE SEXO = "F"
+  OR ENDERECO LIKE "%RJ";
 
-/*AND - E */
-SELECT NOME, SEXO, ENDERECO FROM CLIENTE
-WHERE
-SEXO = 'M' AND ENDERECO LIKE '%MG';
+  /*AND - E */
+  SELECT NOME, SEXO, ENDERECO FROM CLIENTE
+  WHERE
+  SEXO = 'M' AND ENDERECO LIKE '%MG';
 
-SELECT NOME, SEXO, ENDERECO FROM CLIENTE
-WHERE
-SEXO = 'F' AND ENDERECO LIKE '%ESTACIO%';
+  SELECT NOME, SEXO, ENDERECO FROM CLIENTE
+  WHERE
+  SEXO = 'F' AND ENDERECO LIKE '%ESTACIO%';
 
-/*
-SEXO FEMININO E MORA NO RIO JANEIRO
-  - 70% sexo femino
-  - 30% mora RJ
-  - 1º checo cidade e depois o sexo
-*/
-SELECT NOME, SEXO, ENDERECO
-FROM CLIENTE WHERE ENDERECO LIKE "%RJ"
-AND SEXO = "F";
+  /*
+  SEXO FEMININO E MORA NO RIO JANEIRO
+    - 70% sexo femino
+    - 30% mora RJ
+    - 1º checo cidade e depois o sexo
+  */
+  SELECT NOME, SEXO, ENDERECO
+  FROM CLIENTE WHERE ENDERECO LIKE "%RJ"
+  AND SEXO = "F";
 
 -- ==================================================
 --  FILTRANDO TABELA VERDADE FIM
@@ -84,8 +92,12 @@ AND SEXO = "F";
 -- ==================================================
 --  COUNT - INICIO
 -- ==================================================
- SELECT COUNT(*) FROM  CLIENTE;
- SELECT COUNT(*) AS "QUANTIDADE REGISTRO" FROM  CLIENTE;
+  SELECT COUNT(*) FROM  CLIENTE;
+  SELECT COUNT(*) AS "QUANTIDADE REGISTRO" FROM  CLIENTE;
+
+  /* CONTAR EMAILS NULOS*/
+  SELECT COUNT(*), "QUANTIDADE" FROM CLIENTE
+  WHERE EMAIL IS NULL;
 -- ==================================================
 --  COUNT - FIM
 -- ==================================================
@@ -94,11 +106,16 @@ AND SEXO = "F";
 --  GROUP BY - INICIO
 -- ==================================================
 
-/* AGRUPAMENTO POR SEXO*/
-SELECT SEXO, COUNT(*) AS "QUANTIDADE"
-FROM CLIENTE
-GROUP BY(SEXO);
+  /* AGRUPAMENTO POR SEXO*/
+  SELECT SEXO, COUNT(*) AS "QUANTIDADE"
+  FROM CLIENTE
+  GROUP BY(SEXO);
 
+  /* CONTAR EMAILS NULOS E AGRUPAR POR SEXO */
+  SELECT SEXO, COUNT(*), "QUANTIDADE"
+  FROM CLIENTE
+  WHERE EMAIL IS NULL
+  GROUP BY (SEXO);
 -- ==================================================
 --  GROUP BY - FIM
 -- ==================================================
