@@ -37,4 +37,12 @@
 1 - MAXÍMO DE UM<br/>
 N - MAIS DE UM<br/>
 
+###### FOREIGN -KEY:
+<p>RELACIONAMENTOS  1 X 1 a chave fica na tabela mais
+fraca (nesse caso para criar um endereco deve-se
+ter um cliente tonando endereco a tabela fraca)</p>
+<p>
+RELACIONAMENTOS  1 X N, a chave estrangeira
+ficará sempre na tabela N.</p>
+
 -----------------------------------------------------------
