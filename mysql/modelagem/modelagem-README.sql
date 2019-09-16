@@ -29,7 +29,7 @@ SEGUNDO ALGARISMO - OBRIGATORIEDADE
 1 - MAXIMO DE UM
 N - MAIS DE UM
 
-FOREIGN -KEY:
+FOREIGN KEY:
 RELACIONAMENTOS  1 X 1 a chave fica na tabela mais
 fraca (nesse caso para criar um endereco deve-se
 ter um cliente tonando endereco a tabela fraca)
