@@ -26,11 +26,11 @@ DESC CLIENTE;
                            ('CARLA', 'F','CARLA@CARLINHA.COM',575567811,'999878519', 'RIBEIRAO DAS NEVES - CENTRO - MINAS GERAIS - MG');
 
 ---------------------------------------------------
--- END - 001 : SEM MODELAGEM FORA DA CONVENSÃO
+-- END - 001
 ---------------------------------------------------
 
 ---------------------------------------------------
--- INIT - 002 : COM MODELAGEM FORA DA CONVENSÃO
+-- INIT - 002 : COM MODELAGEM DENTRO DA CONVENSÃO
 ---------------------------------------------------
 
 /*CLIENTE*/
@@ -69,5 +69,5 @@ INSERT INTO TELEFONE VALUES(NULL, 'RES', '55', '86', '66558794',   6);
 
 
 ---------------------------------------------------
--- END - 002 : COM MODELAGEM FORA DA CONVENSÃO
+-- END - 002
 ---------------------------------------------------

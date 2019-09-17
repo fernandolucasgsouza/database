@@ -1,4 +1,8 @@
 
+
+---------------------------------------------------
+-- INIT - 001 : SEM MODELAGEM FORA DA CONVENSÃO
+--------------------------------------------------
 SELECT NOME, SEXO, EMAIL FROM CLIENTE;
 
 -- UPDATE SEMPRE COM CLAUSULA WHERE
@@ -15,3 +19,17 @@ WHERE NOME = "MARIA";
 UPDATE CLIENTE
 SET NOME = "VERONICA"
 WHERE EMAIL = "VERA@BOL.COM";
+
+---------------------------------------------------
+-- END - 001
+---------------------------------------------------
+
+---------------------------------------------------
+-- INIT - 002 : COM MODELAGEM DENTRO DA CONVENSÃO
+---------------------------------------------------
+UPDATE CLIENTE
+SET CPF ='99754-7'
+WHERE IDCLIENTE = 5;
+---------------------------------------------------
+-- END - 002
+--------------------------------------------------
