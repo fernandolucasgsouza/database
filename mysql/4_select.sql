@@ -1,7 +1,7 @@
 
 
 ---------------------------------------------------
--- INIT - 001 : SEM MODELAGEM FORA DA CONVENSÃO
+-- INIT - 001 : SEM MODELAGEM, FORA DA CONVENSÃO
 ---------------------------------------------------
 
 /* RETORNAR DATA E HORA DO BANCO */
@@ -133,12 +133,12 @@ WHERE EMAIL IS NOT NULL;
 -- ==================================================
 
 ---------------------------------------------------
--- END - 001 : SEM MODELAGEM FORA DA CONVENSÃO
+-- END - 001 : SEM MODELAGEM, FORA DA CONVENSÃO
 ---------------------------------------------------
 
 
 ---------------------------------------------------
--- INIT - 002 : COM MODELAGEM DENTRO DA CONVENSÃO
+-- INIT - 002 : COM MODELAGEM, DENTRO DA CONVENSÃO
 ---------------------------------------------------
 
 /* JUNCAO [FOMA ERRADA]*/

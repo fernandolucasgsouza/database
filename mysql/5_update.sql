@@ -1,7 +1,7 @@
 
 
 ---------------------------------------------------
--- INIT - 001 : SEM MODELAGEM FORA DA CONVENSÃO
+-- INIT - 001 : SEM MODELAGEM, FORA DA CONVENSÃO
 --------------------------------------------------
 SELECT NOME, SEXO, EMAIL FROM CLIENTE;
 
@@ -25,7 +25,7 @@ WHERE EMAIL = "VERA@BOL.COM";
 ---------------------------------------------------
 
 ---------------------------------------------------
--- INIT - 002 : COM MODELAGEM DENTRO DA CONVENSÃO
+-- INIT - 002 : COM MODELAGEM, DENTRO DA CONVENSÃO
 ---------------------------------------------------
 UPDATE CLIENTE
 SET CPF ='99754-7'

@@ -1,6 +1,6 @@
 
 ---------------------------------------------------
--- INIT - 001 : SEM MODELAGEM FORA DA CONVENSÃO
+-- INIT - 001 : SEM MODELAGEM, FORA DA CONVENSÃO
 ---------------------------------------------------
 /* USANDO BANCO */
 USE PROJETO;
@@ -26,7 +26,7 @@ DESC CLIENTE;
 ---------------------------------------------------
 
 ---------------------------------------------------
--- INIT - 002 : COM MODELAGEM DENTRO DA CONVENSÃO
+-- INIT - 002 : COM MODELAGEM, DENTRO DA CONVENSÃO
 ---------------------------------------------------
 /*
 *  FOREIGN -KEY:
