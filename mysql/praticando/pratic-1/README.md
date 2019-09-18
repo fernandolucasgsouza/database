@@ -14,9 +14,9 @@
 <pre>
   <code>
   CLIENTE :
-    - 1 CARRO :<br/>
-          - 1 MARCA<br/>
-          - MULTIPLAS CORES<br/>
-    - MULTIPLOS TELEFONES (não obrigatórios)<br/>
+    - 1 CARRO :
+          - 1 MARCA
+          - MULTIPLAS CORES
+    - MULTIPLOS TELEFONES (não obrigatórios)
   </pre>
 </code>
