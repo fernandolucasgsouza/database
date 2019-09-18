@@ -1,5 +1,5 @@
-*1)* Criar um banco de dados chamado projeto e conectar-se ao banco.<br>
-_2)_ Criar a modelagem conforme o escopo abaixo:
+**1)** Criar um banco de dados chamado projeto e conectar-se ao banco.<br/>
+**2)** Criar a modelagem conforme o escopo abaixo:
 
 <p>
   Sr. José quer modernizar a sua oficina, e por enquanto, cadastrar os carros que entram
@@ -10,11 +10,11 @@ _2)_ Criar a modelagem conforme o escopo abaixo:
   eles sejam obrigatórios.
 </p>
 
-###### lógica:
+###### Lógica:
 
-  CLIENTE :
-    - 1 CARRO :
-          - 1 MARCA
-          - MULTIPLAS CORES
-    - MULTIPLOS TELEFONES (não obrigatórios)
+  CLIENTE :<br/>
+    - 1 CARRO :<br/>
+          - 1 MARCA<br/>
+          - MULTIPLAS CORES<br/>
+    - MULTIPLOS TELEFONES (não obrigatórios)<br/>
 
