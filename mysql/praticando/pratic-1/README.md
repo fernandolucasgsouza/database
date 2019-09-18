@@ -11,10 +11,12 @@
 </p>
 
 ###### Lógica:
-
-  CLIENTE :<br/>
+<pre>
+  <code>
+  CLIENTE :
     - 1 CARRO :<br/>
           - 1 MARCA<br/>
           - MULTIPLAS CORES<br/>
     - MULTIPLOS TELEFONES (não obrigatórios)<br/>
-
+  </pre>
+</code>
